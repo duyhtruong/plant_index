@@ -1,9 +1,12 @@
 import React from 'react';
+import Navigation from './Navigation';
+import MainHeader from './MainHeader';
 
 class MainContainer extends React.Component{
     render(){
         return(
-            <div><p>Hello </p></div>
+            <Navigation />,
+            <MainHeader />
         )
     }
 }
