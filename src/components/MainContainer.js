@@ -5,8 +5,10 @@ import MainHeader from './MainHeader';
 class MainContainer extends React.Component{
     render(){
         return(
-            <Navigation />,
+            <div>
+            <Navigation />
             <MainHeader />
+            </div>
         )
     }
 }
