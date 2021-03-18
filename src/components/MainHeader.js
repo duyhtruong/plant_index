@@ -1,13 +1,21 @@
 import React from 'react';
+import './MainHeader.css';
+
+import {Container, Row, Col} from 'react-bootstrap';
 
 class MainHeader extends React.Component{
     render(){
         return(
-            <div>
+            <Container>
+            <Row>
+            <Col>
                 <p>Thriving plants begin with research</p>
                 <p>Optimize your plant's growing environment by learning about the important factors that help them thrive</p>
-                <div>Picture Here</div>
-            </div>
+            </Col>
+            <Col><div className="mainheader--image">Picture Here</div></Col>
+                
+            </Row>       
+            </Container>
         )    
     }
 }

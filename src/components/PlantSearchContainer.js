@@ -3,7 +3,7 @@ import React from 'react';
 class PlantSearchContainer extends React.Component{
     render(){
         return(
-            <div></div>
+            <div>PlantSearchContainer</div>
         )
     }
 }
