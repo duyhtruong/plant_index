@@ -8,7 +8,7 @@ class MainHeader extends React.Component{
         return(
             <Container>
             <Row>
-            <Col>
+            <Col className="my-auto">
                 <p>Thriving plants begin with research</p>
                 <p>Optimize your plant's growing environment by learning about the important factors that help them thrive</p>
             </Col>

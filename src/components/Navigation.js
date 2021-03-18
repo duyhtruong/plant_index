@@ -1,13 +1,30 @@
 import React from 'react';
 
-class Navigation extends React.Component{
-    render(){
-        return(
+import {Nav, Navbar} from 'react-bootstrap';
+
+class Navigation extends React.Component {
+    render() {
+        return (
+
+
             <div>
-                <p>Plant Index</p>
-                <p>Search Plants</p>
-                <p>Buy Plants</p>
-                <p>My Plants</p>
+
+                <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
+                    <Navbar.Brand href="#home">Plant Index</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="mr-auto">
+                            
+                            
+                        </Nav>
+                        <Nav>
+                            <Nav.Link href="#deets">Search Plants</Nav.Link>
+                            <Nav.Link href="#deets">Buy Plants</Nav.Link>
+                            <Nav.Link href="#deets">My Plants</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
+          
             </div>
         )
     }
