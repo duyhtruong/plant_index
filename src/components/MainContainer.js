@@ -1,6 +1,10 @@
 import React from 'react';
 import Navigation from './Navigation';
 import MainHeader from './MainHeader';
+import HomepageAbout from './HomepageAbout';
+import PlantSearchContainer from './PlantSearchContainer';
+import HomepageFactorsContainer from './HomepageFactorsContainer';
+import './MainContainer.css';
 
 class MainContainer extends React.Component{
     render(){
@@ -8,6 +12,9 @@ class MainContainer extends React.Component{
             <div>
             <Navigation />
             <MainHeader />
+            <HomepageAbout />
+            <PlantSearchContainer />
+            <HomepageFactorsContainer />
             </div>
         )
     }
