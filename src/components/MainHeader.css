@@ -1,5 +1,7 @@
+.mainheader--container__height{
+    height:70vh;
+}
+
 .mainheader--image{
-    width:400px;
-    height:400px;
-    background-color: #526F53;
+    width: 100%;
 }
