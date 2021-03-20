@@ -3,5 +3,9 @@
 }
 
 .mainheader--image{
-    width: 100%;
+    max-height: 100%;
+}
+
+.mainheader--col-height__100{
+    height: 100%;
 }
