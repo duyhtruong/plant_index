@@ -7,11 +7,11 @@ class PlantSearchBar extends React.Component{
         return(
             <Container>
             <Form>
-            <Row>
-                <Col>
+            <Row className="mx-auto justify-content-center">
+                <Col xs={8}>
                 <Form.Control placeholder="Plant name" />
                 </Col>
-                <Col>
+                <Col xs={2}>
                 <Button variant="primary" type="submit">
                     Search
                 </Button>

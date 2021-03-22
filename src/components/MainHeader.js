@@ -9,11 +9,11 @@ class MainHeader extends React.Component{
         return(
             <Container >
             <Row className="my-auto mainheader--container__height">
-            <Col xs={12} md className="my-auto">
+            <Col xs={12} md={6} className="my-auto">
                 <h1>Thriving plants begin with research</h1>
                 <p>Optimize your plant's growing environment by learning about the important factors that help them thrive</p>
             </Col>
-            <Col xs={12} md className="mainheader--col-height__100"><img className="mainheader--image" src={header_image} alt="plant header image"/></Col>
+            <Col xs={12} md={6} className="mainheader--col-height__100"><img className="mainheader--image" src={header_image} alt="plant header image"/></Col>
                 
             </Row>       
             </Container>

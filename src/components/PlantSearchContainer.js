@@ -8,9 +8,9 @@ class PlantSearchContainer extends React.Component{
     render(){
         return(
             <Container>
-            <Row>
-                <Col xs={12}>
-                <div className="mx-auto">PlantSearchContainer</div>
+            <Row className="justify-content-center">
+                <Col>
+                <h2>Plant Search Container</h2>
                 <PlantSearchBar />
                 </Col>
             </Row>
