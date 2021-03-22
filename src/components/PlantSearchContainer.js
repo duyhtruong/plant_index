@@ -2,7 +2,7 @@ import React from 'react';
 import PlantSearchBar from './PlantSearchBar';
 import PlantInformationCard from './PlantInformationCard';
 
-import {Container, Col, Row} from 'react-bootstrap';
+import {Container, Col, Row, CardDeck} from 'react-bootstrap';
 
 class PlantSearchContainer extends React.Component{
     render(){
@@ -14,16 +14,16 @@ class PlantSearchContainer extends React.Component{
                 <PlantSearchBar />
                 </Col>
             </Row>
-            <Row>
-                <Col><PlantInformationCard /></Col>
-                <Col><PlantInformationCard /></Col>
-                <Col><PlantInformationCard /></Col>
-            </Row>
-            <Row>
-                <Col><PlantInformationCard /></Col>
-                <Col><PlantInformationCard /></Col>
-                <Col><PlantInformationCard /></Col>
-            </Row>
+            <CardDeck className="my-4">
+                <PlantInformationCard />
+                <PlantInformationCard />
+                <PlantInformationCard />
+            </CardDeck>
+            <CardDeck>
+                <PlantInformationCard />
+                <PlantInformationCard />
+                <PlantInformationCard />
+            </CardDeck>
             </Container>
             
         )
