@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {Nav, Navbar, Button, Modal} from 'react-bootstrap';
+import LoginModalContent from './LoginModalContent.js';
 
 class Navigation extends React.Component {
     render() {
@@ -13,20 +14,20 @@ class Navigation extends React.Component {
             return (
             <>
               <Button variant="primary" onClick={handleShow}>
-                Launch demo modal
+                My Plants
               </Button>
         
               <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                  <Modal.Title>Modal heading</Modal.Title>
+                  <Modal.Title>Log In / Register</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                <Modal.Body><LoginModalContent /></Modal.Body>
                 <Modal.Footer>
                   <Button variant="secondary" onClick={handleClose}>
                     Close
                   </Button>
                   <Button variant="primary" onClick={handleClose}>
-                    Save Changes
+                    Login
                   </Button>
                 </Modal.Footer>
               </Modal>
@@ -40,7 +41,7 @@ class Navigation extends React.Component {
 
             <div>
                
-                <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
+                <Navbar collapseOnSelect expand="lg" >
                     <Navbar.Brand href="#home">Plant Index</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
@@ -49,10 +50,9 @@ class Navigation extends React.Component {
                             
                         </Nav>
                         <Nav>
-                            <Nav.Link href="#deets">Search Plants</Nav.Link>
-                            <Nav.Link href="#deets">Buy Plants</Nav.Link>
-                            <Nav.Link ><LoginModal/></Nav.Link>
-                            <Nav.Link href="#deets">My Plants</Nav.Link>
+                            <Nav.Link href="#deets" className="my-auto">Search Plants</Nav.Link>
+                            <Nav.Link href="#deets" className="my-auto">Buy Plants</Nav.Link>
+                            <Nav.Link ><LoginModal className="my-auto"/></Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
