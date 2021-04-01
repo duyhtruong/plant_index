@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import {Nav, Navbar, Button, Modal} from 'react-bootstrap';
-import LoginModal from './LoginModal';
 
 class Navigation extends React.Component {
     render() {

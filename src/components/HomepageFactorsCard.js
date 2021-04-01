@@ -5,12 +5,11 @@ class HomepageFactorsCard extends React.Component {
     render() {
         return (
             <Card border="light" style={{ width: '18rem' }}>
-                <Card.Header>Header</Card.Header>
+                <Card.Header>{this.props.FactorCardHeader}</Card.Header>
                 <Card.Body>
-                    <Card.Title>Light Card Title</Card.Title>
+                    <Card.Title>{this.props.FactorCardHeader}</Card.Title>
                     <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk
-                        of the card's content.
+                        {this.props.FactorCardParagraph}
                     </Card.Text>
                 </Card.Body>
             </Card>
