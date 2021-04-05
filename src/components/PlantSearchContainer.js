@@ -5,6 +5,26 @@ import PlantInformationCard from './PlantInformationCard';
 import {Container, Col, Row, CardDeck} from 'react-bootstrap';
 
 class PlantSearchContainer extends React.Component{
+    constructor(props){
+        super(props);
+        this.state ={
+            items: []
+        };
+    }
+
+    componentDidMount(){
+        fetch()
+            .then(res=>res.json())
+            .then(
+                (result)=>{
+                    this.ssetState({
+                        items: result.items
+                    });
+                }
+                )
+                .catch(console.log)
+    }
+    
     render(){
         return(
             <Container>
