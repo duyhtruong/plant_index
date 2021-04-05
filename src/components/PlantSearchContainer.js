@@ -13,12 +13,12 @@ class PlantSearchContainer extends React.Component{
     }
 
     componentDidMount(){
-        fetch()
+        fetch('https://cors-anywhere.herokuapp.com/https://trefle.io/api/v1/plants?token=XFoRphEHvsUpto2Ut7jZwOud_IDEe8Kpq4NOIFviU78')
             .then(res=>res.json())
             .then(
                 (result)=>{
-                    this.ssetState({
-                        items: result.items
+                    this.setState({
+                        items: result.data
                     });
                 }
                 )
@@ -35,15 +35,9 @@ class PlantSearchContainer extends React.Component{
                 </Col>
             </Row>
             <CardDeck className="my-4">
-                <PlantInformationCard />
-                <PlantInformationCard />
-                <PlantInformationCard />
+                <PlantInformationCard PlantResults={this.state.items} />     
             </CardDeck>
-            <CardDeck>
-                <PlantInformationCard />
-                <PlantInformationCard />
-                <PlantInformationCard />
-            </CardDeck>
+         
             </Container>
             
         )
