@@ -34,9 +34,9 @@ class PlantSearchContainer extends React.Component{
                 <PlantSearchBar />
                 </Col>
             </Row>
-            <CardDeck className="my-4">
+            <Row className="my-4">
                 <PlantInformationCard PlantResults={this.state.items} />     
-            </CardDeck>
+            </Row>
          
             </Container>
             
